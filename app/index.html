@@ -5,7 +5,7 @@
     <title>Kalkulator</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="calculator.css">
-    <script></script>
+    <script src="calculator.js"></script>
 </head>
 <body>
 <header></header>
@@ -26,31 +26,41 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="form-group">
 
-                                <input type="email" class="form-control" id="number1" placeholder="number">
+                                <input type="text" class="form-control" id="pole1" placeholder="number">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="number2" placeholder="number">
+                                <input type="text" class="form-control" id="pole2" placeholder="number">
                             </div>
+
                             <div class="form-group">
-                                <input type="email" class="form-control" id="result" placeholder="result">
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <button type="button" class="btn btn-primary">+</button>
-                                    <button type="button" class="btn btn-primary">-</button>
-                                    <button type="button" class="btn btn-primary">x</button>
-                                    <button type="button" class="btn btn-primary">/</button>
-                                    <button type="button" class="btn btn-primary">=</button>
+                                <div class="col-md-10 col-md-offset-2">
+                                    <button type="button" class="btn btn-primary"
+                                            onclick="add(document.getElementById('pole1').value,document.getElementById('pole2').value)">+
+                                    </button>
+                                    <button type="button" class="btn btn-primary"
+                                            onclick="subtract(document.getElementById('pole1').value,document.getElementById('pole2').value)">-
+                                    </button>
+                                    <button type="button" class="btn btn-primary"
+                                            onclick="multiply(document.getElementById('pole1').value,document.getElementById('pole2').value)">x
+                                    </button>
+                                    <button type="button" class="btn btn-primary"
+                                            onclick="divide(document.getElementById('pole1').value,document.getElementById('pole2').value)">/
+                                    </button>
+
                                 </div>
 
                             </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="result" placeholder="result">
+                            </div>
+
+
                         </div>
 
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
