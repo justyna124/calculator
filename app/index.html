@@ -5,7 +5,7 @@
     <title>Kalkulator</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="calculator.css">
-    <script src="calculator.js"></script>
+    <script src="calculator.js" charset="utf-8"></script>
 </head>
 <body>
 <header></header>
@@ -13,7 +13,7 @@
 <div class="container">
 
     <div class="row ">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
 
@@ -62,7 +62,40 @@
 
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div row class="space">
+                        <button type="button" class="btn btn-primary nr" onclick="numberClick(1)">1</button>
+                        <button type="button" class="btn btn-primary nr">2</button>
+                        <button type="button" class="btn btn-primary nr">3</button>
+                    </div>
+                    <div row class="space">
+                        <button type="button" class="btn btn-primary nr">4</button>
+                        <button type="button" class="btn btn-primary nr">5</button>
+                        <button type="button" class="btn btn-primary nr">6</button>
+                    </div>
+                    <div row class="space">
+                        <button type="button" class="btn btn-primary nr">7</button>
+                        <button type="button" class="btn btn-primary nr">8</button>
+                        <button type="button" class="btn btn-primary nr">9</button>
+                    </div>
+                    <div row class="space">
+                        <button type="button" class="btn btn-primary nrZero">0</button>
+                    </div>
+                    <div row class="area">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="boxNum" placeholder="number">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 
 </body>
