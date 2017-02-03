@@ -30,9 +30,7 @@ function add(a, b)
     else {
         a = parseFloat(a);
         b = parseFloat(b);
-        //console.log(a,b);
         result = (a + b).toFixed(2);
-        //console.log(typeof result);
         document.getElementById('result').value = parseFloat(result);
 
     }
